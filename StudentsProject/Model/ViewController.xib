@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="StudentsProject" customModuleProvider="target">
             <connections>
+                <outlet property="filterButton" destination="Vre-Sr-ko7" id="lxv-aD-VWB"/>
                 <outlet property="tableView" destination="GZY-Co-6md" id="CEB-md-G8x"/>
                 <outlet property="view" destination="iN0-l3-epB" id="s8f-zb-RTP"/>
             </connections>
@@ -25,9 +26,23 @@
                     <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vre-Sr-ko7">
+                    <rect key="frame" x="294" y="666" width="100" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.012087071650988435" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="txJ-CX-uUD"/>
+                        <constraint firstAttribute="height" constant="50" id="x0o-9a-p7r"/>
+                    </constraints>
+                    <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vre-Sr-ko7" secondAttribute="trailing" constant="20" id="0uJ-ug-DaC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Vre-Sr-ko7" secondAttribute="bottom" constant="20" id="2iC-s8-1LI"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GZY-Co-6md" secondAttribute="trailing" id="Khe-6s-343"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="GZY-Co-6md" secondAttribute="bottom" id="PVa-YB-jE1"/>
                 <constraint firstItem="GZY-Co-6md" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="WEw-0d-yt4"/>
